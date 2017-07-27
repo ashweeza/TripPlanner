@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffcccc"
+    android:orientation="horizontal">
+
+    <!-- <ImageView
+         android:id="@+id/imageView3"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         app:srcCompat="@drawable/amusement_park" />-->
+
+    <TextView
+        android:id="@+id/daytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listitemstyle"
+        android:gravity="center"
+        android:text="@string/day"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#fcf411" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/timedaytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="@string/timeofday"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/citytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timedaytv"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/daytv"
+            android:gravity="center"
+            android:text="@string/city_name"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ponetv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/place_one"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/dist1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/ptwotv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/place_two"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/dist2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/pthreetv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/place_three"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/dist3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#3d6d3c" />
+
+        <TextView
+            android:id="@+id/pfourtv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/place_four"
+            android:textColor="#3d6d3c" />
+    </LinearLayout>
+</LinearLayout>

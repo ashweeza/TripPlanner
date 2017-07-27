@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.ashweeza.tripplanner.NewTripFragment">
+    <!--
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.71"
+            android:background="@color/bg_main">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tour" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="New trip"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tour" />
+        </TableRow>-->
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/trip_name"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/tripnameET"
+        android:layout_width="wrap_content"
+        android:hint="@string/trip_name_hint"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/textView4"
+        android:background="@drawable/edittxt" />
+
+    <Button
+        android:id="@+id/buttonminus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripnameET"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/textView"
+        android:text="@string/decrement" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/buttonminus"
+        android:layout_below="@id/tripnameET"
+        android:gravity="center"
+        android:text="@string/nofdays"
+        android:textAllCaps="true"
+        android:layout_alignStart="@id/textView4"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/buttonminus"
+        android:layout_below="@id/tripnameET"
+        android:layout_toEndOf="@id/buttonminus"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/buttonplus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripnameET"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/quantity_text_view"
+        android:text="@string/increment" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonminus"
+        android:background="@drawable/rect"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/currentdate"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <Button
+        android:id="@+id/sbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:gravity="center"
+        android:text="@string/startdate" />
+
+    <Button
+        android:id="@+id/ebutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sbutton"
+        android:layout_toStartOf="@+id/enddate"
+        android:gravity="center_horizontal"
+        android:text="@string/enddate" />
+
+    <Button
+        android:id="@+id/plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ebutton"
+        android:layout_gravity="center"
+        android:text="@string/plan" />
+
+    <Button
+        android:id="@+id/testbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan"
+        android:text="Test" />
+
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@id/sbutton"
+        android:gravity="center"
+        android:text="@string/startdate"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plan"
+        android:layout_alignBottom="@id/ebutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/startdate"
+        android:layout_below="@id/startdate"
+        android:gravity="center"
+        android:text="@string/enddate"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <!--
+            <Button
+                android:id="@+id/tablesbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sHOW ALL TABLES" />-->
+
+    <!-- <ListView
+         android:id="@+id/lisviewmain"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1.5"
+         android:gravity="center" />-->
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+    <TextView
+        android:id="@+id/tripnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/tripdaysTV"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="@string/trip_name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tripdaysTV"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tripdaysTV"
+        android:background="#F4D03F"
+        android:gravity="center"
+        android:text="@string/days"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+</RelativeLayout>

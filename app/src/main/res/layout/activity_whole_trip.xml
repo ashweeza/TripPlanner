@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarc"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="@drawable/arrow_left" />
+
+
+
+        <!--      <TextView
+                  android:id="@+id/triptvvvv"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/bg_main"
+                  android:elevation="12dp"
+                  android:gravity="center"
+                  android:text="TRIP DATA"
+                  android:textColor="#000000"
+                  android:textSize="35sp" />-->
+
+        <ListView
+            android:id="@+id/triplv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+            android:elevation="8dp" />
+    <!--<FrameLayout
+        android:id="@+id/layout_whole_trip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.ashweeza.tripplanner.WholeTrip">
+    </FrameLayout>-->
+</android.support.design.widget.CoordinatorLayout>

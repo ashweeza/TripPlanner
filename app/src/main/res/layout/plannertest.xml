@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="7dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/placeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/edittxt"
+        android:drawableEnd="@drawable/ic_close_light"
+        android:hint="@string/enter_city_hint"
+        android:singleLine="true">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <!-- <Button
+         android:id="@+id/clearbt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentTop="true"
+         android:text="X" />-->
+
+    <Spinner
+        android:id="@+id/daynum2"
+        style="@style/mySpinnerItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeTV"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/my_recycler_view" />
+
+    <Spinner
+        android:id="@+id/timenum2"
+        style="@style/mySpinnerItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daynum2"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/my_recycler_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/timenum2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/placeTV"
+        android:scrollbars="vertical" />
+    <!-- <Spinner
+         android:id="@+id/placetype"
+         style="@style/mySpinnerItemStyle"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent" />-->
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/my_recycler_view"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/typetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewline2"
+        android:layout_below="@id/viewline"
+        android:layout_toStartOf="@+id/showselectedplacesbtn"
+        android:gravity="center"
+        android:text="@string/place_type"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/viewline2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/showselectedplacesbtn"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewline2"
+        android:divider="#000000"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/showtrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/viewline"
+        android:layout_toEndOf="@+id/timenum2"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/showselectedplacesbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showtrip"
+        android:layout_toStartOf="@+id/showtrip"
+        android:text="@string/set" />
+
+
+</RelativeLayout>

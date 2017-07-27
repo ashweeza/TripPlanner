@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_restaurant"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indian" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italian" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/attractions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_attractions"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+
+        <CheckBox
+            android:id="@+id/museum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_museum" />
+
+        <CheckBox
+            android:id="@+id/beach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_beaches" />
+
+        <CheckBox
+            android:id="@+id/airport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_airport" />
+
+        <CheckBox
+            android:id="@+id/zoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_zoo" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/set"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/set" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="2dp"
+                android:text="@string/reset" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>
